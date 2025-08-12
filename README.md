@@ -62,7 +62,7 @@ Inputs/
     └── ...
 ```
 
-![As this photo](FileStructure.png)
+![File Structure](assets/FileStructure.png)
 
 **Image Naming Convention for Training:**
 - Filename should start with 3-digit class number (000-057)
@@ -88,6 +88,8 @@ Please choose number for the following task.
 0. Exit
 Enter your choice:
 ```
+
+![Program Settings Menu](assets/Settings.png)
 
 ## Menu Options Explained
 
@@ -133,10 +135,14 @@ The system recognizes 58 different traffic sign types:
 
 ## How It Works
 
+![System Block Diagram](assets/BlockDiagram.png)
+
 ### 1. Color Segmentation
 - Converts image to HSV color space
 - Creates masks for red, blue, and yellow regions
 - Applies morphological operations to clean up masks
+
+![Segmentation Process](assets/Segmentation_Process.png)
 
 ### 2. Contour Detection
 - Finds contours in the segmented image
